@@ -50,6 +50,9 @@ std = []
 bytes = { version = "1", default-features = false }
 prost-derive = { version = "0.12.1", path = "prost-derive", optional = true }
 
+[patch.crates-io]
+bytes = { git = "https://github.com/taiki-e/bytes", branch = "cfg_target_has_atomic" }
+
 [dev-dependencies]
 criterion = { version = "0.4", default-features = false }
 env_logger = { version = "0.10", default-features = false }
