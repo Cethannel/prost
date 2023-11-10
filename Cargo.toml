@@ -47,11 +47,8 @@ no-recursion-limit = []
 std = []
 
 [dependencies]
-bytes = { version = "1", default-features = false }
+bytes = { version = "1", default-features = false, git = "https://github.com/taiki-e/bytes", branch = "cfg_target_has_atomic" }
 prost-derive = { version = "0.12.1", path = "prost-derive", optional = true }
-
-[patch.crates-io]
-bytes = { git = "https://github.com/taiki-e/bytes", branch = "cfg_target_has_atomic" }
 
 [dev-dependencies]
 criterion = { version = "0.4", default-features = false }
